@@ -1,3 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: #f40c3f;
+}
+.outer-container{
+  position: relative;
+  z-index: 1;
+ 
+}
+.mega-cont-flex-2{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   margin: 1% 7%;
+   min-height: 100vh;
+}
+.mega-cont-flex-2-no-margin{
+  display: flex;
+   align-items: center;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   min-height: 100vh;
+}
+.tagline-cont{
+  width: 55%;
+  height: fit-content;
+  color: white;
+  padding: 0.4rem;
+  transition: 0.5s ;
+}
+
+.image-slider-cont{
+  position: relative;
+  width: 40%;
+  height: 45rem;
+  background-color: black;
+}
+/* .uni-up-margin{
+  margin-top: 6rem;
+} */
+
+
+.share-tech{
+  font-family: "Anta", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.title{
+  font-size:  80px;
+}
+.sml-title{
+  font-size: 40px;
+}
+.profile-photo-cont{
+  width: 50%;
+  height: 100vh;
+  background-color: black;
+}
+.profile-photo-cont img{
+  object-fit: fill;
+  width: 100%;
+  height: 100%;
+}
+.profile-content-cont{
+  width: 42%;
+  height: 100vh;
+  background-color: #f40c3f;
+  margin-left: 8%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+.big-title{
+  font-size: 90px;
+  color: white;
+}
+.text{
+  font-size: 21px;
+  color: rgb(211, 207, 207);
+}
+@media(max-width:420px){
+  
+  .tagline-cont{
+    width: 100%;
+    margin-top: 3rem;
+  }
+  .image-slider-cont{
+    width: 100%;
+    height: 35rem;
+  }
+  .full-image-cont{
+    height: 35rem;
+  }
+  .title{
+    font-size: 50px;
+  }
+  .sml-title{
+    font-size: 30px;
+    text-decoration: underline;
+  }
+  .profile-photo-cont{
+    width: 100%;
+    margin: 1% 7%;
+    height: 32rem;
+  }
+  .profile-content-cont{
+    width: 100%;
+    margin: 1% 7%;
+    height: fit-content;
+  }
+  .mega-cont-flex-2-no-margin{
+    height: fit-content;
+  }
+  .big-title{
+  font-size: 55px;
+  }
+ 
+}
