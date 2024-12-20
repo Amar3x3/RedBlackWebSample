@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Share+Tech+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Bungee+Shade&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -22,7 +23,7 @@ body{
    align-items: center;
    justify-content: space-between;
    flex-wrap: wrap;
-   margin: 1% 7%;
+   margin: 0% 7%;
    min-height: 100vh;
 }
 .mega-cont-flex-2-no-margin{
@@ -56,13 +57,19 @@ body{
   font-weight: 400;
   font-style: normal;
 }
+.share-tech{
+  font-family: "Bungee Inline", serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
 .title{
   font-size:  80px;
-  color: black;
+  color: #e02f1f;
 }
 .sml-title{
   font-size: 40px;
+  color: chocolate;
 }
 .profile-photo-cont{
   width: 50%;

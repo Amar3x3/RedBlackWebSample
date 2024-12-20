@@ -1,5 +1,5 @@
 
-
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Bungee+Shade&display=swap');
 html body{
     scroll-behavior:smooth;
     transition: 1s;
@@ -27,9 +27,9 @@ nav{
   width: 100vw;
     z-index: 1001;
     top: 0;
-    /* border-bottom: 1px solid gray; */
-    /* box-shadow: 0px 15px 10px -15px #111; */
-    justify-content: center;
+    border-bottom: 1px solid gray; 
+    box-shadow: 0px 15px 10px -15px #111; 
+    justify-content: space-evenly;
     align-items: center;
 }
 .margin{
@@ -52,13 +52,18 @@ nav .nav_container{
     height: 5rem;
 }
 .logo{
-/* width: 200px; */
+
 display: flex;
 align-items: center;
 }
+.logo img{
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
 .links{
   padding:0.6rem 2.5rem;
-  background-color: white;
+  /* background-color: white; */
   border-radius: 2.5rem;
   margin-top: 1rem;
 }
@@ -69,7 +74,6 @@ align-items: center;
 }
 .links ul a{
   font-size: 1rem;
-  font-family: 'Poppins', sans-serif;
   font-weight:500;
   color: #f02a45;
 
@@ -164,7 +168,7 @@ nav.open .links {
 .nav_item a{
   position: relative;
   text-decoration: none;
-  font-family: 'Poppins', sans-serif;
+
   padding: 0 10px;
   letter-spacing: 0.5px;
 
@@ -181,6 +185,11 @@ nav.open .links {
 }
 .nav_item a:hover::after{
   width: 100%;
+}
+.share-tech{
+  font-family: "Bungee Inline", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 

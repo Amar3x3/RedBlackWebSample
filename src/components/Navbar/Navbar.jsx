@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './navbar.css'
+import logo from '../../assets/logo_ishu.jpg'
 
 
 const Navbar = () => {
@@ -30,17 +31,17 @@ const Navbar = () => {
       <nav className={`navbarr ${isMenuOpen ? 'open' : ''} share-tech`}>
         <div className="nav_container">
           <div className="logo">
-            {/* <img src={require('../images/logo.png')} className="logo" alt="" /> */}
+            <img src={logo} className="logo" alt="" />
           </div>
           <div className="hamburger-menu" onClick={handleMenuToggle}>
             <div className="bar"></div>
           </div>
         </div>
         <div className={`links ${isMenuOpen ? 'show' : ''}`}>
-         
-          
-          <ul>
-            <li className="nav_item ">
+
+
+          <ul className='share-tech'>
+            <li className="nav_item share-tech">
               <Link
                 to="/"
                 className={location.pathname === '/' ? 'active_nav' : ''}
@@ -49,7 +50,7 @@ const Navbar = () => {
                 Home
               </Link>
             </li>
-            <li className="nav_item ">
+            <li className="nav_item share-tech">
               <Link
                 to="/projects"
                 className={location.pathname === '/aboutme' ? 'active_nav' : ''}
@@ -78,6 +79,14 @@ const Navbar = () => {
             </li>
 
           </ul>
+
+
+        </div>
+
+        <div className="contact-btn ">
+          <button class="bg-[#ff6f61] text-[#fff5e1] font-bold py-2 px-4 rounded hover:bg-[#e65a4d] hover:text-[#ffebd0] transition-all duration-300">
+            Contact Me
+          </button>
         </div>
       </nav>
     </>
