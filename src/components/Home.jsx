@@ -17,16 +17,19 @@ const Home = () => {
             <div className="mega-cont-flex-2 uni-up-margin">
                 
 
-                <div className="tagline-cont">
+                <div className="tagline-cont text-center">
                     <h1 className=" font-bold share-tech title">
-                        Interiors | Design | Event | Architecture | Spaces
+                    Ishwari Designs llp
+                        
                     </h1>
-                    <h3 className="share-tech sml-title">Ishwari Salunke Porfolio</h3>
+                    <h3 className="share-tech sml-title">Interiors | Design | Event | Architecture | Spaces</h3>
+                    <button class="bg-[#ff6f61] text-[#fff5e1] font-bold py-2 px-4 rounded hover:bg-[#e65a4d] hover:text-[#ffebd0] transition-all duration-300 mt-1">
+                Explore
+              </button>
                     
                 </div>
-                <div className="image-slider-cont">
-                    <ImageSlider images={images}></ImageSlider>
-                </div>
+
+                
             </div>
         </div>
     </>

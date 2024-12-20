@@ -186,11 +186,7 @@ nav.open .links {
 .nav_item a:hover::after{
   width: 100%;
 }
-.share-tech{
-  font-family: "Bungee Inline", serif;
-  font-weight: 400;
-  font-style: normal;
-}
+
 .contact-btn{
   margin-left: 11rem;
 }

@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Share+Tech+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Bungee+Shade&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -11,7 +13,7 @@
   padding: 0;
 }
 body{
-  background-color: #f40c3f;
+  background-color: #fff5e1;
 }
 .outer-container{
   position: relative;
@@ -21,7 +23,7 @@ body{
 .mega-cont-flex-2{
    display: flex;
    align-items: center;
-   justify-content: space-between;
+   justify-content:center;
    flex-wrap: wrap;
    margin: 0% 7%;
    min-height: 100vh;
@@ -34,7 +36,7 @@ body{
    min-height: 100vh;
 }
 .tagline-cont{
-  width: 55%;
+  width: fit-content;
   height: fit-content;
   color: white;
   padding: 0.4rem;
@@ -57,11 +59,21 @@ height: 4rem;
   font-weight: 400;
   font-style: normal;
 }
-.share-tech{
+/* .share-tech{
   font-family: "Bungee Inline", serif;
   font-weight: 400;
   font-style: normal;
 }
+.share-tech{
+  font-family: "Eagle Lake", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.share-tech{
+  font-family: "Lobster", serif;
+  font-weight: 400;
+  font-style: normal;
+} */
 
 .title{
   font-size:  80px;
@@ -84,7 +96,9 @@ height: 4rem;
 .profile-content-cont{
   width: 42%;
   height: 100vh;
-  background-color: #f40c3f;
+  background-color: #ff6f61;
+  background-color: #fff5e1;
+  
   margin-left: 8%;
   display: flex;
   flex-direction: column;
@@ -93,7 +107,7 @@ height: 4rem;
 }
 .big-title{
   font-size: 90px;
-  color: white;
+  color: #ff6f61
 }
 .text{
   font-size: 21px;
