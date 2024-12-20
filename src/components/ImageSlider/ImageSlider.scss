@@ -15,3 +15,8 @@
     height: 100%;
     object-fit: fill;
 }
+@media(max-width:420px){
+    .full-img-cont{
+        height: 35rem;
+    }
+}

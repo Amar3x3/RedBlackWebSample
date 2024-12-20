@@ -77,16 +77,18 @@ const Navbar = () => {
                 Experience
               </Link>
             </li>
+            <div className="contact-btn ">
+              <button class="bg-[#ff6f61] text-[#fff5e1] font-bold py-2 px-4 rounded hover:bg-[#e65a4d] hover:text-[#ffebd0] transition-all duration-300">
+                Contact Me
+              </button>
+            </div>
 
           </ul>
 
 
-        </div>
 
-        <div className="contact-btn ">
-          <button class="bg-[#ff6f61] text-[#fff5e1] font-bold py-2 px-4 rounded hover:bg-[#e65a4d] hover:text-[#ffebd0] transition-all duration-300">
-            Contact Me
-          </button>
+
+
         </div>
       </nav>
     </>

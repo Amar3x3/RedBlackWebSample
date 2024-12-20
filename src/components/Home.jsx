@@ -13,14 +13,16 @@ const Home = () => {
     return <>
         <div className="outer-container">
         <Lines/>
-        
+        <div className="uni-up-margin"></div>
             <div className="mega-cont-flex-2 uni-up-margin">
+                
 
                 <div className="tagline-cont">
                     <h1 className=" font-bold share-tech title">
-                        Architecture Tailored to Your Story.
+                        Interiors | Design | Event | Architecture | Spaces
                     </h1>
                     <h3 className="share-tech sml-title">Ishwari Salunke Porfolio</h3>
+                    
                 </div>
                 <div className="image-slider-cont">
                     <ImageSlider images={images}></ImageSlider>
