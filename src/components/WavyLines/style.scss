@@ -10,6 +10,9 @@
   height: 100%;
   z-index: -1;
 }
+.js-svg{
+  background-color: #eae0d5;
+}
 
 a-waves {
   --x: -0.5rem;
@@ -52,7 +55,7 @@ a-waves {
 
     path {
       fill: none;
-      stroke: #160000;
+      stroke:#769fcd;
       stroke-width: 1px;
     }
   }

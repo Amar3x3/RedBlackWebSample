@@ -20,7 +20,7 @@ const Home = () => {
                     <h1 className=" font-bold share-tech title">
                         Architecture Tailored to Your Story.
                     </h1>
-                    <h3 className="share-tech sml-title">Amar Gaikwads Porfolio</h3>
+                    <h3 className="share-tech sml-title">Ishwari Salunke Porfolio</h3>
                 </div>
                 <div className="image-slider-cont">
                     <ImageSlider images={images}></ImageSlider>

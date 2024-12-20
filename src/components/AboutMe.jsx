@@ -8,7 +8,7 @@ const AboutMe = () =>{
 
             <div className="profile-content-cont">
                 <h1 className="share-tech big-title">Hello</h1>
-                <h1 className="share-tech big-title">i'm Amar Gaikwad</h1>
+                <h1 className="share-tech big-title">i'm Ishwari Salunke</h1>
                 <p className="share-tech text"> 
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium laborum culpa rem nulla temporibus dolorem ex, quos ad! Earum iste eius odit dolorum rem fugiat. Eos nobis sit quas ut!
                 </p>
