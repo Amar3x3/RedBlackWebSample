@@ -56,12 +56,12 @@ const Services = () => {
       </div>
     </div>
     <div className="cards-container flex justify-center align-middle m-2 flex-wrap -mt-64">
-    <Card />
-    <Card />
-    <Card />
-    <Card />
-    <Card />
-    <Card />
+     <Card title={"Interiors"}/> 
+    <Card title={"Design"}/>
+    <Card title={"Event"}/>
+    <Card title={"Architecture"}/>
+    <Card title={"Spaces"}/>
+    <Card title={"Lifestyle"}/>
     </div>
   </>
 }

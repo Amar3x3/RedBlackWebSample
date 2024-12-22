@@ -9,7 +9,7 @@ const Card = ({ title, description, img }) => {
             <div class="post">
                 <div class="post-container">
                     <div class="post-title">
-                        <h1>Beethoven</h1>
+                        <h1>{title}</h1>
                         <h3>Sonatas for piano and<br /> violin nos. 5, 8, & 9</h3>
                     </div>
 
