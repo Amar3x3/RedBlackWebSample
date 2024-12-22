@@ -78,7 +78,7 @@ const Navbar = () => {
               </Link>
             </li>
             <div className="contact-btn ">
-              <button class="bg-[#ff6f61] text-[#fff5e1] font-bold py-2 px-4 rounded hover:bg-[#e65a4d] hover:text-[#ffebd0] transition-all duration-300">
+              <button class="bg-[#77bfa3] text-[#fff5e1] font-bold py-2 px-4 rounded hover:bg-[#e65a4d] hover:text-[#ffebd0] transition-all duration-300">
                 Contact Me
               </button>
             </div>

@@ -23,7 +23,7 @@ const Home = () => {
                         
                     </h1>
                     <h3 className="share-tech sml-title">Interiors | Design | Event | Architecture | Spaces</h3>
-                    <button class="bg-[#ff6f61] text-[#fff5e1] font-bold py-2 px-4 rounded hover:bg-[#e65a4d] hover:text-[#ffebd0] transition-all duration-300 mt-1">
+                    <button class="bg-[#77bfa3] text-[#fff5e1] font-bold py-2 px-4 rounded hover:bg-[#e65a4d] hover:text-[#ffebd0] transition-all duration-300 mt-1">
                 Explore
               </button>
                     

@@ -31,6 +31,12 @@ nav{
     box-shadow: 0px 15px 10px -15px #111; 
     justify-content: space-evenly;
     align-items: center;
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+    backdrop-filter: blur(10px); /* Apply blur effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border for definition */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    border-radius: 8px; /* Slight rounding for elegance */
 }
 .margin{
   height: 0.4rem;
@@ -75,7 +81,7 @@ align-items: center;
 .links ul a{
   font-size: 1rem;
   font-weight:500;
-  color: #f02a45;
+  color: #77bfa3;
 
 }
 .links a{
@@ -88,15 +94,16 @@ align-items: center;
 }
 .active_nav{
   background-color: white;
-  color: #081340;
+  color: white;
 }
 .links a.active_nav{
-    background-color: #f02a45;
+    background-color: #77bfa3;
     color: var(--light-one);
     border-radius:2rem ;
     font-size: 1rem;
     padding: 0.9rem 2.1rem;
     margin-left: 1rem;
+    color: white;
     
 }
 .links a.active_nav:hover{
