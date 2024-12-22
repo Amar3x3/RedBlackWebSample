@@ -52,11 +52,11 @@ const Navbar = () => {
             </li>
             <li className="nav_item share-tech">
               <Link
-                to="/projects"
+                to="/Services"
                 className={location.pathname === '/aboutme' ? 'active_nav' : ''}
                 onClick={handleLinkClick}
               >
-                About Me
+                Services
               </Link>
             </li>
             <li className="nav_item">

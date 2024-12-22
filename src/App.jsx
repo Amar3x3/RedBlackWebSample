@@ -5,6 +5,8 @@ import './App.css'
 import Home from './components/Home'
 import AboutMe from './components/AboutMe'
 import Projects from './components/Projects'
+import Card from './components/Card/Card'
+import Services from './components/Pages/Services'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -14,6 +16,7 @@ function App() {
    <Home/>
    <AboutMe/>
    <Projects/>
+   
    </>
   )
 }

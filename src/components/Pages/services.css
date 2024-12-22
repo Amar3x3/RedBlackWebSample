@@ -1,0 +1,12 @@
+.full-screen-services{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.share-tech{
+    font-family: "Anta", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
