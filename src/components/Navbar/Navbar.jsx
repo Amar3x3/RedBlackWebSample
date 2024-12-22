@@ -52,8 +52,8 @@ const Navbar = () => {
             </li>
             <li className="nav_item share-tech">
               <Link
-                to="/Services"
-                className={location.pathname === '/aboutme' ? 'active_nav' : ''}
+                to="/services"
+                className={location.pathname === '/services' ? 'active_nav' : ''}
                 onClick={handleLinkClick}
               >
                 Services
@@ -61,11 +61,11 @@ const Navbar = () => {
             </li>
             <li className="nav_item">
               <Link
-                to="/achievements"
-                className={location.pathname === '/achievements' ? 'active_nav' : ''}
+                to="/blogs"
+                className={location.pathname === '/blogs' ? 'active_nav' : ''}
                 onClick={handleLinkClick}
               >
-                Achievements
+                Blogs
               </Link>
             </li>
             <li className="nav_item ">
@@ -78,9 +78,12 @@ const Navbar = () => {
               </Link>
             </li>
             <div className="contact-btn ">
-              <button class="bg-[#77bfa3] text-[#fff5e1] font-bold py-2 px-4 rounded hover:bg-[#e65a4d] hover:text-[#ffebd0] transition-all duration-300">
+              <Link 
+              to="/contact" 
+              onClick={handleLinkClick}
+              className={`bg-[#77bfa3] text-[#fff5e1] font-bold py-2 px-4 rounded hover:bg-[#e65a4d] hover:text-[#ffebd0] transition-all duration-300`}>
                 Contact Me
-              </button>
+              </Link>
             </div>
 
           </ul>

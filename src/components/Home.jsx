@@ -1,7 +1,7 @@
 import React from "react";
 import Lines from './WavyLines/AWaves';
 import ImageSlider from "./ImageSlider/ImageSlider";
-
+import { Link, useLocation } from 'react-router-dom';
 
 const Home = () => {
     const images = [
@@ -12,20 +12,25 @@ const Home = () => {
     ];
     return <>
         <div className="outer-container">
+       
             <Lines />
             <div className="uni-up-margin"></div>
             <div className="mega-cont-flex-2 uni-up-margin">
 
 
                 <div className="tagline-cont text-center -mt-">
-                    <h1 className=" font-bold share-tech title text-black">
+                    <h1 className=" font-bold share-tech title text-[#149262]">
                         Ishwari Designs llp
 
                     </h1>
                     <h3 className="share-tech sml-title">Interiors | Design | Event | Architecture | Spaces</h3>
-                    <button class="bg-[#44cc98] text-[#fff5e1] font-bold py-3 px-5 rounded hover:bg-[#e65a4d] hover:text-[#ffebd0] transition-all duration-300 mt-3 rounded-md">
+                   
+                    <div className="mt-6">
+                    <Link to='/services'
+                    className="bg-[#44cc98] text-[#fff5e1] font-bold py-3 px-5 hover:bg-[#e65a4d] hover:text-[#ffebd0] transition-all duration-300 mt-3 rounded-md" >
                         Explore Services
-                    </button>
+                    </Link>
+                    </div>
 
                 </div>
 
