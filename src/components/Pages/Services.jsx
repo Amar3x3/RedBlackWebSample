@@ -61,7 +61,7 @@ const Services = () => {
     <Card title={"Event"}/>
     <Card title={"Architecture"}/>
     <Card title={"Spaces"}/>
-    <Card title={"Lifestyle"}/>
+    <Card title={""}/>
     </div>
   </>
 }

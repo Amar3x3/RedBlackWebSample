@@ -6,7 +6,8 @@ div.post {
   display: block;
   height: 30rem;
   width: 25rem;
-  background: linear-gradient( #E1CFE8, #84E7CF );
+  background: linear-gradient( #77bfa3, #fff5e1 );
+  border-radius: 1rem;
   box-shadow: 0 2.5rem 5rem -2.75rem rgba(0,0,0,0.85);
   
   &-container {
@@ -17,6 +18,7 @@ div.post {
     padding: 3rem;
     overflow: hidden;
     box-shadow: inset 0 0 5rem rgba(255,255,255,0.65);
+    border-radius: 1rem;
     
     &:after,
     &:before {
@@ -24,7 +26,7 @@ div.post {
       width: 100%;
       height: 100%;
       position: absolute;
-      background: linear-gradient(45deg, #E1CFE8, #84E7CF );
+      background: linear-gradient(45deg, #77bfa3, #fff5e1 );
       opacity: 1;
       z-index: 1;
       will-change: transform;

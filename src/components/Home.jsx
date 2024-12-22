@@ -17,13 +17,13 @@ const Home = () => {
             <div className="mega-cont-flex-2 uni-up-margin">
 
 
-                <div className="tagline-cont text-center -mt-40">
+                <div className="tagline-cont text-center -mt-">
                     <h1 className=" font-bold share-tech title text-black">
                         Ishwari Designs llp
 
                     </h1>
                     <h3 className="share-tech sml-title">Interiors | Design | Event | Architecture | Spaces</h3>
-                    <button class="bg-[#44cc98] text-[#fff5e1] font-bold py-3 px-5 rounded hover:bg-[#e65a4d] hover:text-[#ffebd0] transition-all duration-300 mt-3">
+                    <button class="bg-[#44cc98] text-[#fff5e1] font-bold py-3 px-5 rounded hover:bg-[#e65a4d] hover:text-[#ffebd0] transition-all duration-300 mt-3 rounded-md">
                         Explore Services
                     </button>
 
