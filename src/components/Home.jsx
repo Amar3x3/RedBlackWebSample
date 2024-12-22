@@ -20,7 +20,7 @@ const Home = () => {
 
                 <div className="tagline-cont text-center -mt-">
                     <h1 className=" font-bold share-tech title text-[#149262]">
-                        Ishwari Designs llp
+                        Ishwari Designs LLP
 
                     </h1>
                     <h3 className="share-tech sml-title">Interiors | Design | Event | Architecture | Spaces</h3>

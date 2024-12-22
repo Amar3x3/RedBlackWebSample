@@ -2,9 +2,9 @@ const Blogs = () =>{
     return<>
    
    <div className="paper-container w-9/12 m-auto"></div>
-   <div className="paper-outer-container h-screen w-9/12  bg-[#77bfa3] m-auto shadow-2xl shadow-black mt-20 overflow-y-scroll relative mb-10 pb-10">
+   <div className="paper-outer-container h-screen w-9/12  rounded-md bg-[#77bfa3] m-auto shadow-2xl shadow-[#317058] mt-20 overflow-y-scroll relative mb-10 pb-10">
    
-   <p className=" text-9xl font-semibold tracking-tight text-gray-900 sm:text-7xl share-tech ml-5 mt-5">
+   <p className=" text-9xl max-w-420:text-7xl max-w-420:text-center font-semibold tracking-tight text-gray-900 sm:text-7xl share-tech ml-5 mt-5">
     Blogs
    </p>
 

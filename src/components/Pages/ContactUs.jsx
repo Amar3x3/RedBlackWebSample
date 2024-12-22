@@ -30,7 +30,7 @@ const ContactUs = () => {
           ></div>
           </div>
 
-            <div className="relative w-2/4 m-auto mt-36 mb-24 bg-[#77bfa3] py-24 share-tech rounded-md">
+            <div className="relative w-2/4  max-w-420:w-3/4 m-auto mt-36 mb-24 bg-[#77bfa3] py-24 share-tech rounded-md p-5 shadow-2xl shadow-green-500">
 
                 <div className="mx-auto max-w-2xl text-center">
                     <h2 className="text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Contact sales</h2>
