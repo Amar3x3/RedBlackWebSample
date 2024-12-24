@@ -70,11 +70,20 @@ const Navbar = () => {
             </li>
             <li className="nav_item ">
               <Link
-                to="/exp"
-                className={location.pathname === '/exp' ? 'active_nav' : ''}
+                to="/about"
+                className={location.pathname === '/about' ? 'active_nav' : ''}
                 onClick={handleLinkClick}
               >
-                Experience
+                About Me
+              </Link>
+            </li>
+            <li className="nav_item ">
+              <Link
+                to="/projects"
+                className={location.pathname === '/projects' ? 'active_nav' : ''}
+                onClick={handleLinkClick}
+              >
+                Projects
               </Link>
             </li>
             <div className="contact-btn ">

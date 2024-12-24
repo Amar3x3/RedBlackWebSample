@@ -1,5 +1,6 @@
 import Card from "../Card/Card";
 import './services.css'
+import { Link } from "react-router-dom";
 
 const Services = () => {
   return <>
@@ -30,12 +31,12 @@ const Services = () => {
               fugiat veniam occaecat.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
-              <a
-                href="#"
+              <Link
+                to='/blogs'
                 className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500"
               >
-                Get started
-              </a>
+                View Blogs
+              </Link>
               
             </div>
           </div>

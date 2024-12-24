@@ -118,3 +118,10 @@ div.post {
   0% {opacity: 0; transform: translateX(-20px)}
   100% {opacity: 1; transform: translateX(0px)}
 }
+@media(max-width:420px){
+  div.post{
+    width: 95%;
+    margin: auto;
+   
+  }
+}

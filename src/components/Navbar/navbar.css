@@ -91,6 +91,7 @@ align-items: center;
     font-size: larger;
     text-transform: uppercase;
     transition: 0.3s;
+    margin: 0.3rem 0;
 }
 .active_nav{
   background-color: white;
@@ -259,7 +260,7 @@ nav.open .links {
       }
       .links a.active_nav{
         background-color: var(--light-one);
-        color:#19223A;
+        color:#e1e4ec;
         border-radius:2rem ;
         font-size: 16px;
         padding: 0.7rem 1.5rem;

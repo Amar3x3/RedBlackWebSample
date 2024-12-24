@@ -26,14 +26,15 @@ body{
    justify-content:center;
    flex-wrap: wrap;
    margin: 0% 7%;
-   min-height: 100vh;
+   min-height: calc(100vh - 4rem);
 }
 .mega-cont-flex-2-no-margin{
   display: flex;
    align-items: center;
    justify-content: space-between;
    flex-wrap: wrap;
-   min-height: 100vh;
+   position: relative;
+   min-height: calc(100vh - 5rem);
 }
 .tagline-cont{
   width: fit-content;
@@ -107,7 +108,7 @@ height: 4rem;
 }
 .big-title{
   font-size: 90px;
-  color: #ff6f61
+  color: #149262;
 }
 .text{
   font-size: 21px;

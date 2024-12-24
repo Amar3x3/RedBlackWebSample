@@ -1,4 +1,5 @@
-import './footer.scss'
+import './footer.scss';
+import { Link } from 'react-router-dom';
 const Footer = () => {
     const scrollToTop = () => {
         window.scrollTo({
@@ -43,27 +44,27 @@ const Footer = () => {
                 </button>
             </div>
             <ul class="footer__list">
-                <li class="footer__item active">
-                    <a href="#" class="footer__link">Home</a>
+                <li class="footer__item">
+                    <Link to='/' class="footer__link">Home</Link>
                 </li>
                 <li class="footer__item">
-                    <a href="#" class="footer__link">Mission</a>
+                    <Link to='blogs' class="footer__link">Blogs</Link>
                 </li>
                 <li class="footer__item">
-                    <a href="#" class="footer__link">IPO&ICO</a>
+                    <Link to='services' class="footer__link">Services</Link>
                 </li>
                 <li class="footer__item">
-                    <a href="#" class="footer__link">How It Works</a>
+                    <Link to='about' class="footer__link">About Me</Link>
                 </li>
                 <li class="footer__item">
-                    <a href="#" class="footer__link">Quotes</a>
+                    <Link to='contact' class="footer__link">Contact Me</Link>
                 </li>
                 <li class="footer__item">
-                    <a href="#" class="footer__link">History</a>
+                    <Link to='projects' class="footer__link">Projects</Link>
                 </li>
             </ul>
             <div class="footer__copyright">
-                <p class="desc copyright">IG Launc, LLC. All rights reserved.</p>
+                <p class="desc copyright">All rights reserved.</p>
             </div>
         </footer>
 

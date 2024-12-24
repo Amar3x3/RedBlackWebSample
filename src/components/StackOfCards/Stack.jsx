@@ -2,7 +2,7 @@
 import './stack.css'
 const Stack = () =>{
     return <>
-         <div class="container">
+         <div class="container ">
         <ul id="cards">
             <li class="card" id="card1">
                 <div class="card-body">
