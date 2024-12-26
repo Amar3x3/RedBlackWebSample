@@ -90,7 +90,7 @@ height: 4rem;
   background-color: black;
 }
 .profile-photo-cont img{
-  object-fit: fill;
+  object-fit: cover;
   width: 100%;
   height: 100%;
 }

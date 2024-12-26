@@ -3,6 +3,34 @@ import './services.css'
 import { Link } from "react-router-dom";
 
 const Services = () => {
+  const cardsData = [
+    {
+      title: "Interiors",
+      subpoints: ["Residential", "Commercial", "Home styling & decor"],
+    },
+    {
+      title: "Design",
+      subpoints: ["Graphic Design", "Web Design", "Advertising Design"]
+    },
+    {
+      title: "Architecture",
+      subpoints: ["Modern designs", "Residential", "Commercial"],
+    },
+    {
+      title: "Events",
+      description: "Crafting memorable experiences.",
+      subpoints: ["Corporate events","Social Events", "Cultural Events", "Pop up Events", "Holiday Events"],
+    },
+    {
+      title: "Materials",
+      subpoints: ["Construction", "Flooring", "Door & Windows", "Wall Paints", "Electrical"]
+    },
+    {
+      title: "Spaces",
+      subpoints: ["Outdoor living spaces", "Offices", "Resturant", "Cafe / Coffee Shop", "Creative Space", "Photo Zones"]
+    }
+   
+  ];
   return <>
     <div className="full-screen-service h-screen w-screen text-center">
     <div className="relative isolate px-6 pt-14 lg:px-8">
@@ -57,12 +85,15 @@ const Services = () => {
       </div>
     </div>
     <div className="cards-container flex justify-center align-middle m-2 flex-wrap -mt-64">
-     <Card title={"Interiors"}/> 
-    <Card title={"Design"}/>
-    <Card title={"Event"}/>
-    <Card title={"Architecture"}/>
-    <Card title={"Spaces"}/>
-    <Card title={""}/>
+    {cardsData.map((card, index) => (
+        <Card
+          key={index}
+          title={card.title}
+          description={card.description}
+          subpoints={card.subpoints}
+        />
+      ))}
+    
     </div>
   </>
 }

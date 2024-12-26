@@ -120,7 +120,14 @@ div.post {
 }
 @media(max-width:420px){
   div.post{
-    width: 95%;
+    width: 300px;
+    margin: auto;
+   
+  }
+}
+@media(max-width:300px){
+  div.post{
+    width: 250px;
     margin: auto;
    
   }
