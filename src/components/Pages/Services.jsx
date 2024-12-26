@@ -19,7 +19,7 @@ const Services = () => {
     {
       title: "Events",
       description: "Crafting memorable experiences.",
-      subpoints: ["Corporate events","Social Events", "Cultural Events", "Pop up Events", "Holiday Events"],
+      subpoints: ["Corporate events", "Social Events", "Cultural Events", "Pop up Events", "Holiday Events"],
     },
     {
       title: "Materials",
@@ -29,11 +29,11 @@ const Services = () => {
       title: "Spaces",
       subpoints: ["Outdoor living spaces", "Offices", "Resturant", "Cafe / Coffee Shop", "Creative Space", "Photo Zones"]
     }
-   
+
   ];
   return <>
-    <div className="full-screen-service h-screen w-screen text-center">
-    <div className="relative isolate px-6 pt-14 lg:px-8">
+    <div className="full-screen-service  w-screen text-center">
+      <div className="relative isolate px-6 pt-14 lg:px-8">
         {/* Gradient background */}
         <div
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
@@ -48,11 +48,11 @@ const Services = () => {
           ></div>
         </div>
         {/* Main content */}
-        <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
-         
+        <div className="mx-auto max-w-2xl py-32 ">
+
           <div className="text-center">
             <h1 className="text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl share-tech">
-            Innovative Solutions for Inspired Living.
+              Innovative Solutions for Inspired Living.
             </h1>
             <p className="mt-8 text-lg font-medium text-gray-500 sm:text-xl">
               Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
@@ -65,7 +65,7 @@ const Services = () => {
               >
                 View Blogs
               </Link>
-              
+
             </div>
           </div>
         </div>
@@ -84,8 +84,8 @@ const Services = () => {
         </div>
       </div>
     </div>
-    <div className="cards-container flex justify-center align-middle m-2 flex-wrap -mt-64">
-    {cardsData.map((card, index) => (
+    <div className="cards-container flex justify-center align-middle m-2 flex-wrap ">
+      {cardsData.map((card, index) => (
         <Card
           key={index}
           title={card.title}
@@ -93,7 +93,7 @@ const Services = () => {
           subpoints={card.subpoints}
         />
       ))}
-    
+
     </div>
   </>
 }
