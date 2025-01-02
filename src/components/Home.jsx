@@ -27,7 +27,7 @@ const Home = () => {
                    
                     <div className="mt-6">
                     <Link to='/services'
-                    className="bg-[#44cc98] text-[#fff5e1] font-bold py-3 px-5 hover:bg-[#e65a4d] hover:text-[#ffebd0] transition-all duration-300 mt-3 rounded-md" >
+                    className="share-tech bg-[#44cc98] text-[#fff5e1] font-bold py-3 px-5 hover:bg-[#e65a4d] hover:text-[#ffebd0] transition-all duration-300 mt-3 rounded-md" >
                         Explore Services
                     </Link>
                     </div>

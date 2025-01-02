@@ -1,4 +1,4 @@
-import profileImg from '../assets/image2.jpeg'
+import profileImg from '../assets/image1.jpeg'
 import logo from '../assets/logo_ishu.jpg'
 
 

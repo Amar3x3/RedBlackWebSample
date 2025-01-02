@@ -1,57 +1,47 @@
-@import url('https://fonts.cdnfonts.com/css/ica-rubrik-black');
-@import url('https://fonts.cdnfonts.com/css/poppins');
-
-.banner {
-  width: 100%;
-  height: 100vh;
-  text-align: center;
+div#carousel { 
+  perspective: 1400px; 
+  background: #100000; 
+  padding-top: 2%; 
+  font-size:0; 
+  margin-bottom: 3rem; 
   overflow: hidden;
-  position: relative;
+  position: relative; 
+  z-index: 1;
+ 
 }
-
-.banner .slider {
-  position: absolute;
-  width: 200px;
-  height: 250px;
-  top: 10%;
-  left: calc(50% - 100px);
-  transform-style: preserve-3d;
-  transform: perspective(1000px) rotateX(-16deg);
-  transition: transform 0.5s ease-in-out;
-}
-
-.banner .slider .item {
-  position: absolute;
-  inset: 0;
-  transform: rotateY(calc((var(--position) - 1) * (360 / var(--quantity)))) translateZ(550px);
-}
-
-.banner .slider .item img {
-  width: 100%;
-  height: 100%;
+figure#spinner { 
+  transform-style: preserve-3d; 
+  height: 700px; 
+  transform-origin: 50% 50% -800px; 
+  transition: 1s; 
+ 
+} 
+figure#spinner img { 
+  width: 40%; max-width: 600px; 
+  position: absolute; left: 30%;
+  transform-origin: 50% 50% -800px;
+  outline:1px solid transparent; 
+  height: 550px;
   object-fit: cover;
+  
 }
-
-.controls {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 20px;
+figure#spinner img:nth-child(1) { transform:rotateY(0deg); 
 }
-
-.controls button {
-  background-color: #25283B;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-.controls button:hover {
-  background-color: #d2d2d2;
-  color: #25283B;
-}
+figure#spinner img:nth-child(2) { transform: rotateY(-45deg); }
+figure#spinner img:nth-child(3) { transform: rotateY(-90deg); }
+figure#spinner img:nth-child(4) { transform: rotateY(-135deg); }
+figure#spinner img:nth-child(5){ transform: rotateY(-180deg); }
+figure#spinner img:nth-child(6){ transform: rotateY(-225deg); }
+figure#spinner img:nth-child(7){ transform: rotateY(-270deg); }
+figure#spinner img:nth-child(8){ transform: rotateY(-315deg); }
+div#carousel ~ span { 
+  color: #fff; 
+  margin: 5%; 
+  display: inline-block; 
+  text-decoration: none; 
+  font-size: 2rem; 
+  transition: 0.6s color; 
+  margin-top: -6rem; 
+  border-bottom: none; 
+  line-height: 0; }
+div#carousel ~ span:hover { color: #888; cursor: pointer; }

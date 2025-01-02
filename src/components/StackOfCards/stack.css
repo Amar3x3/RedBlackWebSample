@@ -20,6 +20,7 @@
 	gap: var(--cardMargin);
 	padding-bottom: calc(var(--cards) * var(--cardTopPadding));
 	margin-bottom: var(--cardMargin);
+	
 }
 
 #card1 {
@@ -61,9 +62,6 @@
 	border-radius: 50px;
 	box-shadow: 0 0 30px 0 rgba(0,0,0,0.3);
 	height: var(--cardHeight);
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	transition: all 0.5s;
 }
 

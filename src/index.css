@@ -1,8 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Share+Tech+Mono&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Bungee+Shade&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -60,6 +58,7 @@ height: 4rem;
   font-weight: 400;
   font-style: normal;
 }
+
 /* .share-tech{
   font-family: "Bungee Inline", serif;
   font-weight: 400;

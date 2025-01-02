@@ -1,3 +1,4 @@
+import ShapelessGradientFooter from '../GradientFooter/GradientFooter';
 import './footer.scss';
 import { Link } from 'react-router-dom';
 const Footer = () => {
@@ -13,6 +14,7 @@ const Footer = () => {
 
 
         <footer class="section footer">
+            <ShapelessGradientFooter/>
             <div class="footer__header">
                 <a href="/" class="footer__logo">
                     <span class="logo primary"></span>
@@ -45,7 +47,7 @@ const Footer = () => {
             </div>
             <ul class="footer__list">
                 <li class="footer__item">
-                    <Link to='/' class="footer__link">Home</Link>
+                    <Link to='/' class="footer__link ">Home</Link>
                 </li>
                 <li class="footer__item">
                     <Link to='blogs' class="footer__link">Blogs</Link>

@@ -11,6 +11,7 @@ import Blogs from './components/Pages/Blogs.jsx'
 import ContactUs from './components/Pages/ContactUs.jsx'
 import AboutMe from './components/AboutMe.jsx'
 import Projects from './components/Projects.jsx';
+import GradientFooter from './components/GradientFooter/GradientFooter.jsx'
 const ScrollToTop = () => {
   const location = useLocation();
 
