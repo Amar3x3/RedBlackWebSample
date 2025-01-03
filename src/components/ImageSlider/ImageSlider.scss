@@ -10,13 +10,20 @@
     height: 45rem;
     object-fit: fill;
 }
-.slick-slide img{
+.slicde-container img{
     width: 100%;
     height: 100%;
+    object-fit: cover;
+}
+
+.img{
+    width: 100%;
+    height: 87vh;
+    border-radius: 50px;
     object-fit: fill;
 }
 @media(max-width:420px){
-    .full-img-cont{
-        height: 35rem;
+    .img{
+    height: 60vh;
     }
 }

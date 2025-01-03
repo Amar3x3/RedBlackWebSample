@@ -20,6 +20,7 @@
 	gap: var(--cardMargin);
 	padding-bottom: calc(var(--cards) * var(--cardTopPadding));
 	margin-bottom: var(--cardMargin);
+	;
 	
 }
 
@@ -38,30 +39,46 @@
 
 .card {
 	position: sticky;
-	top: 0;
+	max-width: 80vw;
 	padding-top: calc(var(--index) * var(--cardTopPadding));
 }
 
 #card1 .card-body {
-	background-color: #52B2CF;
+	background-color: transparent;
 }
 #card2 .card-body {
 	/* background-color: #7EC4CF; */
-	background-color: #E5A36F;
+	background-color: transparent;
 }
 #card3 .card-body {
-	background-color: #9CADCE;
+	background-color: transparent;
 }
 #card4 .card-body {
-	background-color: #D4AFB9;
+	background-color: transparent;
 }
 
 .card-body {
-	box-sizing: border-box;
-	padding: 30px;
+	position: relative;
+	width: 100%;
 	border-radius: 50px;
 	box-shadow: 0 0 30px 0 rgba(0,0,0,0.3);
 	height: var(--cardHeight);
 	transition: all 0.5s;
 }
+
+@media(max-width:420px){
+	.card-body{
+		height: 60vh;
+	}
+	.card{
+		height: 60vh;
+	}
+	#cards{
+		margin: 0 5%;
+		grid-template-rows: unset;
+		gap: 1vw;
+	}
+}
+
+
 

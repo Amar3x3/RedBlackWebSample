@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
 :root {
   --btn-icon-bg-color: #191d24;
   --btn-icon-border-color: rgba(255, 255, 255, 0.3);
@@ -15,6 +16,11 @@
   --bg-color: #010314;
 
   --desc-copyright-color: #69758c;
+}
+.share-tech{
+  font-family: "Anta", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 * {

@@ -1,50 +1,51 @@
-import React, { useEffect, useState } from 'react';
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+import React from 'react';
+import { Slide } from 'react-slideshow-image';
+import 'react-slideshow-image/dist/styles.css'
 import './ImageSlider.scss'
 
-const ImageSlider = ({ images }) => {
-  const [imageList, setImageList] = useState([]);
- 
+const spanStyle = {
+  padding: '20px',
+  background: '#efefef',
+  color: '#000000'
+}
 
-  useEffect(() => {
-    const fetchImages = async () => {
-      try {
-       
-          
-       
-        setImageList(images);
-      } catch (error) {
-        console.error('Error fetching images:', error);
-      }
-    };
-    fetchImages();
-  }, [images]);
 
-  // useEffect(() => {
-  //   console.log(images)
-  //   console.log(imageList);
-  // }, [imageList]);
+const slideImages = [
+  {
+    url: 'https://res.cloudinary.com/dn07sxmaf/image/upload/v1735904892/IshuArchitect/4_vm1at6.jpg',
+    caption: 'Slide 1'
+  },
+  {
+    url: 'https://res.cloudinary.com/dn07sxmaf/image/upload/v1735904892/IshuArchitect/1_svrjj7.jpg',
+    caption: 'Slide 2'
+  },
+  {
+    url: 'https://res.cloudinary.com/dn07sxmaf/image/upload/v1735904892/IshuArchitect/3_dwyect.jpg',
+    caption: 'Slide 3'
+  },
+  {
+    url: 'https://res.cloudinary.com/dn07sxmaf/image/upload/v1735904892/IshuArchitect/2_ijp2jk.jpg',
+    caption: 'Slide 4'
+  },
+  {
+    url: 'https://res.cloudinary.com/dn07sxmaf/image/upload/v1735904892/IshuArchitect/5_kju7vd.jpg',
+    caption: 'Slide 5'
+  },
+];
 
-  const settings = {
-    dots: false,
-    infinite: true,
-    autoplay: true,
-    speed: 3500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
-
-  return (
-    <Slider {...settings}>
-      {imageList.map((imageName, index) => (
-        <div className='full-img-cont'>
-            <img key={index} className='card-img' src={imageName} alt={`Event Image ${index + 1}`} />
-        </div>
-      ))}
-    </Slider>
-  );
-};
-
-export default ImageSlider;
+const Slideshow = () => {
+    return (
+      <div className="slide-container relative w-full h-full">
+        <Slide pauseOnHover={false}>
+         {slideImages.map((slideImage, index)=> (
+            <div key={index}>
+              <img className='img' src={`${slideImage.url}`}>
+                
+              </img>
+            </div>
+          ))} 
+        </Slide>
+      </div>
+    )
+}
+export default Slideshow
