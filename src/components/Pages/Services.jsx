@@ -64,7 +64,7 @@ const Services = () => {
             <h1 className="text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl share-tech">
               Your Story Inspires Your Space
             </h1>
-            <p className="mt-8 text-lg font-medium text-gray-500 sm:text-xl">
+            <p className="mt-8 text-lg font-medium text-gray-500 sm:text-xl share-tech">
               We Believe that Spaces should tell a Story - Your Story
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
