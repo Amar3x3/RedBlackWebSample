@@ -15,7 +15,7 @@ const Card = ({ title, subpoints }) => {
       };
     
     return (
-        <motion.div className="ml-[1rem] mr-[1rem] m-8">
+        <div className="ml-[1rem] mr-[1rem] m-8">
             <div className="post shadow-lg shadow-cyan-500">
                 <div className="post-container">
                     <div className="post-title share-tech">
@@ -42,7 +42,7 @@ const Card = ({ title, subpoints }) => {
                     </div>
                 </div>
             </div>
-        </motion.div>
+        </div>
     );
 };
 
