@@ -21,6 +21,7 @@ const Stack = () =>{
          <div class="container ">
         <div id="cards">
             <div class="card" id="card1">
+                <div className="absolute text-3xl bg-[#77bfa3] top-0 left-0 w-full h-12 share-tech z-10 text-center opacity-[0.6] rounded-[50px]">Jadhav Residency</div>
 
                 <div class="card-body">
                   <ImageSlider/>

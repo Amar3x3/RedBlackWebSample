@@ -1,9 +1,21 @@
 import { useState } from "react";
 import './card.scss';
+import { motion } from "framer-motion";
 
+
+ 
 const Card = ({ title, subpoints }) => {
+    const cardVariants = {
+        hidden: { x: "-100vw", opacity: 0 },
+        visible: (i) => ({
+          x: 0,
+          opacity: 1,
+          transition: { delay: i * 0.2, type: "spring", stiffness: 50 },
+        }),
+      };
+    
     return (
-        <div className="ml-[1rem] mr-[1rem] m-8">
+        <motion.div className="ml-[1rem] mr-[1rem] m-8">
             <div className="post shadow-lg shadow-cyan-500">
                 <div className="post-container">
                     <div className="post-title">
@@ -30,7 +42,7 @@ const Card = ({ title, subpoints }) => {
                     </div>
                 </div>
             </div>
-        </div>
+        </motion.div>
     );
 };
 

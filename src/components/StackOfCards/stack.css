@@ -8,7 +8,7 @@
 .container {
 	width: 90%;
 	margin: 0 auto;
-	margin-top: 5rem;
+	margin-top: 6rem;
 }
 
 #cards {
@@ -20,27 +20,24 @@
 	gap: var(--cardMargin);
 	padding-bottom: calc(var(--cards) * var(--cardTopPadding));
 	margin-bottom: var(--cardMargin);
-	;
+	place-items: center;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
 	
 }
 
-#card1 {
-	--index: 1;
-}
-#card2 {
-	--index: 2;
-}
-#card3 {
-	--index: 3;
-}
-#card4 {
-	--index: 4;
-}
+
 
 .card {
-	position: sticky;
-	max-width: 80vw;
-	padding-top: calc(var(--index) * var(--cardTopPadding));
+	position: relative;
+	max-width: 60vw;
+	height: 75vh;
+	min-width: 45vw;
+	/* padding-top: calc(var(--index) * var(--cardTopPadding)); */
+	margin-bottom: 2rem;
 }
 
 #card1 .card-body {
@@ -61,17 +58,27 @@
 	position: relative;
 	width: 100%;
 	border-radius: 50px;
+	border-radius: 23px 23px 50px 50px;
 	box-shadow: 0 0 30px 0 rgba(0,0,0,0.3);
-	height: var(--cardHeight);
+	height: 75vh;
 	transition: all 0.5s;
 }
-
-@media(max-width:420px){
-	.card-body{
+@media(max-width:900px){
+    .card-body{
 		height: 60vh;
 	}
 	.card{
+		max-width: 70vw;
 		height: 60vh;
+	}
+}
+@media(max-width:420px){
+	.card-body{
+		height: 50vh;
+	}
+	.card{
+		height: 50vh;
+		max-width: 80vw;
 	}
 	#cards{
 		margin: 0 5%;

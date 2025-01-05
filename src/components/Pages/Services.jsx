@@ -1,8 +1,18 @@
 import Card from "../Card/Card";
 import './services.css'
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+import { div } from "framer-motion/client";
 
 const Services = () => {
+  const cardVariants = {
+    hidden: { x: "-100vw", opacity: 0 },
+    visible: (i) => ({
+      x: 0,
+      opacity: 1,
+      transition: { delay: i * 0.2, type: "spring", stiffness: 50 },
+    }),
+  };
   const cardsData = [
     {
       title: "Interiors",
@@ -52,16 +62,15 @@ const Services = () => {
 
           <div className="text-center">
             <h1 className="text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl share-tech">
-              Innovative Solutions for Inspired Living.
+              Your Story Inspires Your Space
             </h1>
             <p className="mt-8 text-lg font-medium text-gray-500 sm:text-xl">
-              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
-              fugiat veniam occaecat.
+              We Believe that Spaces should tell a Story - Your Story
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <Link
                 to='/blogs'
-                className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500"
+                className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 share-tech"
               >
                 View Blogs
               </Link>
@@ -86,12 +95,16 @@ const Services = () => {
     </div>
     <div className="cards-container flex justify-center align-middle m-2 flex-wrap ">
       {cardsData.map((card, index) => (
-        <Card
+        <div
+       
+        >
+          <Card
           key={index}
           title={card.title}
           description={card.description}
           subpoints={card.subpoints}
         />
+        </div>
       ))}
 
     </div>
