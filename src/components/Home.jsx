@@ -44,7 +44,7 @@ const Home = () => {
 
 
                 <div className="tagline-cont text-center ">
-                    <h1 className=" font-bold  text-[5rem] max-w-420:text-[2.5rem] text-[#458661] homemade-apple-regular ">
+                    <h1 className=" font-bold  text-[10rem] max-w-420:text-[2.5rem] text-[#458661] homemade-apple-regular birthstone-regular">
                         Ishwari Designs LLP
 
                     </h1>
