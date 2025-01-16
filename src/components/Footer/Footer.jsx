@@ -24,7 +24,7 @@ const Footer = () => {
 
             <div class="px-4 my-4 w-full sm:w-auto">
               <div>
-                <h2 class="inline-block text-2xl pb-4 mb-4 border-b-4 border-[#77bfa3] share-tech">Ishwari Designs LLP</h2>
+                <h2 class="inline-block text-2xl pb-4 mb-4 border-b-4 border-[#458661] share-tech">Ishwari Designs LLP</h2>
               </div>
               <ul class="leading-8 share-tech">
                 <li><a href="#" class="hover:text-blue-400">About Us</a></li>
@@ -35,7 +35,7 @@ const Footer = () => {
             </div>
             <div class="px-4 my-4 w-full sm:w-auto">
               <div>
-                <h2 class="inline-block text-2xl pb-4 mb-4 border-b-4 border-[#77bfa3]">Blog</h2>
+                <h2 class="inline-block text-2xl pb-4 mb-4 border-b-4 border-[#458661]">Blog</h2>
               </div>
               <ul class="leading-8 share-tech">
                 <li><a href="#" class="hover:text-blue-400">Getting Started With Home Planning</a></li>
@@ -47,7 +47,7 @@ const Footer = () => {
             </div>
             <div class="px-4 my-4 w-full sm:w-auto xl:w-1/5">
               <div>
-                <h2 class="inline-block text-2xl pb-4 mb-4 border-b-4 border-[#77bfa3] share-tech">Connect With Us</h2>
+                <h2 class="inline-block text-2xl pb-4 mb-4 border-b-4 border-[#458661] share-tech">Connect With Us</h2>
               </div>
               <a href="#" class="inline-flex items-center justify-center h-8 w-8 border border-gray-100 rounded-full mr-1 hover:text-blue-400 hover:border-blue-400">
                 <svg class="w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
@@ -78,14 +78,14 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div class="bg-[#77bfa3] py-4 text-gray-100">
+      <div class="bg-[#458661] py-4 text-gray-100">
         <div class="mx-auto px-4">
           <div class="-mx-4 flex flex-wrap justify-between">
             <div class="px-4 w-full text-center sm:w-auto sm:text-left text-black">
               All Rights Reserved.
             </div>
             <div class="px-4 w-full text-center sm:w-auto sm:text-left text-black">
-              Made with ❤️ by <a className='underline text-blue-600' href="https://rotating-3d-portfolio.netlify.app/">Amar Gaikwad.</a>
+              Made with ❤️ by <a className='underline text-blue-300' href="https://rotating-3d-portfolio.netlify.app/">Amar Gaikwad.</a>
             </div>
           </div>
         </div>

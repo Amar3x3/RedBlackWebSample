@@ -11,7 +11,8 @@ import Blogs from './components/Pages/Blogs.jsx'
 import ContactUs from './components/Pages/ContactUs.jsx'
 import AboutMe from './components/AboutMe.jsx'
 import Projects from './components/Projects.jsx';
-import GradientFooter from './components/GradientFooter/GradientFooter.jsx'
+
+
 const ScrollToTop = () => {
   const location = useLocation();
 
@@ -23,19 +24,24 @@ const ScrollToTop = () => {
 };
 
 createRoot(document.getElementById('root')).render(
-  <Browser>
-  <Navbar/>
-    <Routes>
-      
-      <Route path='/' element={<App/>}></Route>
-      <Route path='/services' element={<Services/>}></Route>
-      <Route path='/blogs' element={<Blogs/>}></Route>
-      <Route path='/contact' element={<ContactUs/>}></Route>
-      <Route path='/about' element={<AboutMe/>}></Route>
-      <Route path='/projects' element={<Projects/>}></Route>
+  
+    <Browser>
 
-    </Routes>
-    <ScrollToTop/>
-    <Footer/>
-  </Browser>
+      <Navbar />
+      <Routes>
+
+        <Route path='/' element={<App />}></Route>
+        <Route path='/services' element={<Services />}></Route>
+        <Route path='/blogs' element={<Blogs />}></Route>
+        <Route path='/contact' element={<ContactUs />}></Route>
+        <Route path='/about' element={<AboutMe />}></Route>
+        <Route path='/projects' element={<Projects />}></Route>
+
+      </Routes>
+      <ScrollToTop />
+      <Footer />
+
+    </Browser>
+ 
+
 )

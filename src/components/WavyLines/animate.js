@@ -96,8 +96,8 @@ export default class AWaves extends HTMLElement {
     setSize() {
       this.bounding = this.getBoundingClientRect()
   
-      this.svg.style.width = `${window.width}px`
-      this.svg.style.height = `${window.height}px`
+      this.svg.style.width = `100vw`
+      this.svg.style.height = `100vh`
     }
   
     /**

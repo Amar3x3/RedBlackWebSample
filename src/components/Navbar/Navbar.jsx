@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './navbar.css'
-import logo from '../../assets/logo_ishu.jpg'
+import logo from '../../assets/Logo0.png'
 
 
 const Navbar = () => {
@@ -40,7 +40,7 @@ const Navbar = () => {
         <div className={`links ${isMenuOpen ? 'show' : ''}`}>
 
 
-          <ul className='share-tech'>
+          <ul className='share-tech text-[#009900]'>
             <li className="nav_item share-tech">
               <Link
                 to="/"
@@ -59,15 +59,7 @@ const Navbar = () => {
                 Services
               </Link>
             </li>
-            <li className="nav_item">
-              <Link
-                to="/blogs"
-                className={location.pathname === '/blogs' ? 'active_nav' : ''}
-                onClick={handleLinkClick}
-              >
-                Blogs
-              </Link>
-            </li>
+            
             <li className="nav_item ">
               <Link
                 to="/about"
@@ -86,11 +78,12 @@ const Navbar = () => {
                 Projects
               </Link>
             </li>
-            <div className="contact-btn ">
+            <div className="contact-btn">
               <Link 
               to="/contact" 
               onClick={handleLinkClick}
-              className={`bg-[#77bfa3] text-[#fff5e1] font-bold py-2 px-4 rounded hover:bg-[#e65a4d] hover:text-[#ffebd0] transition-all duration-300`}>
+              style={{'color':'#fff'}}
+              className={`bg-[#458661] text-white py-2 px-8 rounded hover:bg-[#e65a4d] hover:text-white transition-all duration-700`}>
                 Contact Me
               </Link>
             </div>

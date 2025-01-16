@@ -2,8 +2,10 @@ import profileImg from '../assets/image1.jpeg'
 import logo from '../assets/logo_ishu.jpg'
 
 
+
 const AboutMe = () => {
   return <>
+
     <div className="mega-cont-flex-2-no-margin mt-24 max-w-420:mb-16 overflow-clip">
 
       <div className="absolute top-[7.5rem] -left-20 -rotate-90 max-w-420:opacity-0 ">
@@ -43,6 +45,7 @@ const AboutMe = () => {
       <div className="right-bottom-overlay"></div>
     </div>
 
+   
     
 
   </>
