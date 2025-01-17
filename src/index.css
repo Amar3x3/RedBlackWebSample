@@ -245,8 +245,8 @@ height: 4rem;
      background-color: #499e6e;
   }
   50% {
-    box-shadow: 0px 0px 5px 5px #51c584;
-    background-color: #51c584;
+    box-shadow: 0px 0px 5.3px 5.3px #63e29a;
+    background-color: #63e29a;
      /* Intense glow */
   }
 }
