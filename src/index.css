@@ -141,6 +141,7 @@ height: 4rem;
   font-family: "Birthstone", serif;
   font-weight: 400;
   font-style: normal;
+  line-height: 9rem;
 }
 
 /* .share-tech{
@@ -233,7 +234,21 @@ height: 4rem;
   border-radius: 50%;
   background-color: #458661;
   color: #fff5e1;
-  box-shadow: 0px 0px 4px 4px #499e6e;
+  animation: sparkle 2s infinite ease-in-out; /* Trigger the sparkle animation every 2 seconds */
+}
+
+@keyframes sparkle {
+  0%, 100% {
+   /* Default size */
+    box-shadow: 0px 0px 4px 4px #499e6e;
+     /* Initial glow */
+     background-color: #499e6e;
+  }
+  50% {
+    box-shadow: 0px 0px 5px 5px #51c584;
+    background-color: #51c584;
+     /* Intense glow */
+  }
 }
 
 .photo-cont img{
@@ -441,6 +456,12 @@ hr{
   }
   .big-title{
   font-size: 55px;
+  }
+  .birthstone-regular {
+    font-family: "Birthstone", serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 3rem;
   }
 
 
