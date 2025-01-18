@@ -16,29 +16,39 @@ const Services = () => {
   const cardsData = [
 
     {
-      title: "Interiors",
+      title: "Interiors Design",
       subpoints: ["Residential", "Commercial", "Home styling & decor"],
+      description:"We create personalized and inspiring interiors that reflect your style and meet your needs, focusing on comfort, functionality, and visual harmony"
     },
     {
-      title: "Design",
-      subpoints: ["Graphic Design", "Web Design", "Advertising Design"]
+      title: "Architecture Design",
+      subpoints: ["New Builds: Designing residential and commercial structures.", "Renovations & Extensions", "Conceptual Architecture"],
+      description:"We offer comprehensive architectural services that combine aesthetic vision with structural integrity, ensuring each project aligns with your needs and environment."
     },
     {
       title: "Architecture",
       subpoints: ["Modern designs", "Residential", "Commercial"],
+      description:"We specialize in curating unforgettable events, from corporate gatherings to weddings, ensuring every detail is aligned with your vision and purpose."
     },
     {
-      title: "Events",
-      description: "Crafting memorable experiences.",
-      subpoints: ["Corporate events", "Social Events", "Cultural Events", "Pop up Events", "Holiday Events"],
+      title: "Event Design & Curation",
+      description: "We specialize in curating unforgettable events, from corporate gatherings to weddings, ensuring every detail is aligned with your vision and purpose.",
+      subpoints: ["Event Planning & Design", "Venue Styling", "Corporate Events", "Weddings & Special Occasions", "Holiday Events"],
     },
     {
-      title: "Materials",
-      subpoints: ["Construction", "Flooring", "Door & Windows", "Wall Paints", "Electrical"]
+      title: "Project Management & Consultation",
+      subpoints: ["End-to-End Project Management", "Design Consultation", "Vendor & Contractor Coordination", "Budget & Timeline Management"],
+      description:"We provide end-to-end project management and expert consultation to ensure seamless execution, within budget and on time."
     },
     {
-      title: "Spaces",
-      subpoints: ["Outdoor living spaces", "Offices", "Resturant", "Cafe / Coffee Shop", "Creative Space", "Photo Zones"]
+      title: "Custom Design Solutions",
+      subpoints: ["Bespoke Furniture Design", "Art & Decor Curation", "Lighting Design"],
+      description:"Every space is unique, and we offer tailored design solutions to meet your specific needs."
+    },
+    {
+      title: "Trading of Materials",
+      subpoints: ["Building Materials", "Interior Furnishings", "Premium Materials"],
+      description:"We source and supply high-quality materials for your design and construction needs."
     }
 
   ];
