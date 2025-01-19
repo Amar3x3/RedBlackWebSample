@@ -30,7 +30,7 @@ const Card = ({ title, subpoints, description }) => {
 
                         <div className="post-meta mt-4">
                             <Link to='/'
-                                className="relative share-tech bg-[#fff5e1] text-[#458661] border-solid border-2 border-[#458661] py-3 px-11 pr-14 transition-all duration-300 mt-3 rounded-[2rem]" >
+                                className="relative share-tech bg-[#fff5e1] text-[#458661] border-solid border-2 border-[#458661]  py-3 px-11 pr-14 transition-all duration-300 mt-3 rounded-[2rem]" >
 
                                 Contact
 

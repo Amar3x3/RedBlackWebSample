@@ -81,7 +81,7 @@ const Services = () => {
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <Link to='/'
-                className="relative share-tech bg-[#fff5e1] text-[#458661] border-solid border-2 border-[#458661] py-3 px-11 pr-14 transition-all duration-300 mt-3 rounded-[2rem]" >
+                className=" relative share-tech bg-[#fff5e1] text-[#458661] border-solid border-2 border-[#458661] standard-btn hover:border-[#e2904c] hover:text-[#e2904c] py-3 px-11 pr-14 transition-all duration-300 mt-3 rounded-[2rem]" >
 
                 Blogs
 

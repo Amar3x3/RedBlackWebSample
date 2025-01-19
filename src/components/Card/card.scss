@@ -9,9 +9,6 @@ div.post {
   background: linear-gradient( #6fbd90, #d3c2a0 );
   border-radius: 1rem;
   box-shadow: 0 2.5rem 5rem -2.75rem rgba(0,0,0,0.85);
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-  perspective: 1000px;
   cursor: pointer;
   
   &-container {
@@ -23,7 +20,6 @@ div.post {
     overflow: hidden;
     box-shadow: inset 0 0 5rem rgba(255,255,255,0.65);
     border-radius: 1rem;
-    transition: all ease-in-out 0.6s;
 
     
     &:after,
@@ -112,11 +108,11 @@ div.post {
   background: linear-gradient(45deg, #e2904c, #fff5e1 );
 }
 .post-back{
-  transition: all ease-in-out 0.7s;
+  transition: ease-in-out 0.6s;
 }
 .post:hover .post-back{
   left: 0;
-  transition: all ease-in-out 0.7s;
+
 }
 
 

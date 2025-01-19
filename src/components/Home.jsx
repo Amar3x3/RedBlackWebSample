@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import Lines from './WavyLines/AWaves';
 import ImageSlider from "./ImageSlider/ImageSlider";
 import { Link, useLocation } from 'react-router-dom';
@@ -17,24 +17,51 @@ const Home = () => {
         'https://via.placeholder.com/800x600/FFFF00/FFFFFF?text=Slide+4',
     ];
     const timeline = gsap.timeline();
-    useGSAP(()=>{
-           // GSAP ScrollTrigger animation setup
-    gsap.utils.toArray('.reveal-from-right').forEach((element) => {
-        gsap.from(element, {
-          scrollTrigger: {
-            trigger: element, // The element that triggers the animation
-            start: 'top 0%', // Trigger when the top of the element reaches 80% of the viewport
-            end: 'bottom 20%', // End when the bottom of the element reaches 20% of the viewport
-            scrub: true, // Optional: makes the animation scrub based on scroll position
-            markers: true, // Optional: shows markers for triggers and end
-          },
-          x: 200, // Start off-screen to the right
-          opacity: 0, // Start invisible
-          duration: 1, // Duration of animation
-          ease: 'power3.out', // Smooth easing
+    const svgPathRef = useRef(null);
+    const svgContainerRef = useRef(null);
+    const width = window.innerWidth;
+
+    // Adjust the control point dynamically
+    var path = `M 0 100 Q 500 100 ${width} 100`;
+
+    const finalPath = `M 10 100 Q 500 100 ${width} 100`;
+
+    useEffect(() => {
+        const svgContainer = svgContainerRef.current;
+
+        const handleMouseMove = (event) => {
+            var { clientX, clientY } = event;
+            clientX -= 200;
+            clientY -= 200;
+            path = `M 10 100 Q ${clientX} ${clientY} ${width} 100`;
+
+            gsap.to(svgPathRef.current, {
+                attr: { d: path },
+                duration: 0.3,
+                ease: "power3.out",
+            });
+        };
+
+        if (svgContainer) {
+            svgContainer.addEventListener("mousemove", handleMouseMove);
+        }
+
+        return () => {
+            if (svgContainer) {
+                svgContainer.removeEventListener("mousemove", handleMouseMove);
+            }
+        };
+    }, []);
+    const handleMouseLeave = () => {
+        gsap.to(svgPathRef.current, {
+            attr: { d: finalPath },
+            duration: 1.5,
+            ease: "elastic.out(1, 0.3)",
         });
-      });
-    },[])
+    };
+
+
+
     return <>
         <div className="outer-container">
 
@@ -53,7 +80,7 @@ const Home = () => {
                     <div className="mt-8 relative">
 
                         <Link to='/services'
-                            className="relative share-tech bg-[#fff5e1] text-[#458661] border-solid border-2 border-[#458661] py-3 px-11 pr-14 transition-all duration-300 mt-3 rounded-[2rem]" >
+                            className="relative share-tech bg-[#fff5e1] text-[#458661] border-solid border-2 border-[#458661] standard-btn hover:border-[#e2904c] hover:text-[#e2904c] py-3 px-11 pr-14 transition-all duration-300 mt-3 rounded-[2rem]" >
 
                             Explore Services
 
@@ -80,7 +107,7 @@ const Home = () => {
                             <div className="mt-8 relative">
 
                                 <Link to='/'
-                                    className="relative share-tech bg-[#fff5e1] text-[#458661] border-solid border-2 border-[#458661] py-3 px-11 pr-14 transition-all duration-300 mt-3 rounded-[2rem]" >
+                                    className="standard-btn hover:border-[#e2904c] hover:text-[#e2904c] relative share-tech bg-[#fff5e1] text-[#458661] border-solid border-2 border-[#458661] py-3 px-11 pr-14 transition-all duration-300 mt-3 rounded-[2rem]" >
 
                                     Explore
 
@@ -156,13 +183,18 @@ const Home = () => {
 
 
 
-
+            <div id="string" ref={svgContainerRef} onMouseLeave={handleMouseLeave} className="relative">
+                <svg viewBox={`0 0 ${window.innerWidth} 200`}
+                    preserveAspectRatio="none" style={{ width: "100%", height: "100%" }}>
+                    <path ref={svgPathRef} d={`M 10 100 Q 500 100 ${window.innerWidth} 100`} stroke="#458661" strokeWidth="2" fill="transparent" />
+                </svg>
+            </div>
 
             <section id="About Us" className="mt-24">
 
                 <h1 className="text-[#458661] text-center  font-medium text-[4rem] max-w-420:text-[3.2rem] max-w-420:mb-[2rem]">About Us</h1>
                 <div className="mega-grid-2-home justify-end flex-wrap-reverse">
-                   
+
 
                     <div className="info-about-cont w-[30rem]  max-w-420:w-[90%] justify-around max-w-420:mr-[0rem] max-w-420:mb-[1.5rem]">
                         <p className="share-tech text-home max-w-420:text-lg">
@@ -173,18 +205,21 @@ const Home = () => {
                         </p>
                     </div>
                     <div className="photo-cont max-w-420:mb-[1.5rem] relative z-0 overflow-visible">
-                    <div className="abs absolute -top-[3rem] -right-[4rem] -z-10">
-                        <img className="w-[1rem]"src={leaf} alt="" />
-                    </div>
-                    <div className="abs absolute  -bottom-[3rem] -left-[4rem] -z-10">
-                        <img className="w-[1rem]"src={leaf} alt="" />
-                    </div>
-                    <div className="absolute"></div>
+                        <div className="abs absolute -top-[3rem] -right-[4rem] -z-10">
+                            <img className="w-[1rem]" src={leaf} alt="" />
+                        </div>
+                        <div className="abs absolute  -bottom-[3rem] -left-[4rem] -z-10">
+                            <img className="w-[1rem]" src={leaf} alt="" />
+                        </div>
+                        <div className="absolute"></div>
                         <img src={profileImg} alt="" />
                     </div>
                 </div>
 
             </section>
+
+
+         
 
 
 

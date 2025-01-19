@@ -237,7 +237,21 @@ height: 4rem;
   color: #fff5e1;
   /* animation: sparkle 2s infinite ease-in-out;  */
 }
-
+.standard-btn:hover .btn-circle{
+  background-color: #e2904c;
+  box-shadow: 0px 0px 4px 4px #e2904c;
+}
+#string{
+  /* background-color: #e2904c; */
+  margin: 0% 5%;
+  overflow-y: visible;
+}
+#string svg{
+ overflow-y: visible;
+}
+#string svg path{
+  overflow-y: visible;
+}
 @keyframes sparkle {
   0%, 100% {
    /* Default size */
