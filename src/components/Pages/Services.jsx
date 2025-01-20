@@ -18,17 +18,17 @@ const Services = () => {
     {
       title: "Interiors Design",
       subpoints: ["Residential", "Commercial", "Home styling & decor"],
-      description:"We create personalized and inspiring interiors that reflect your style and meet your needs, focusing on comfort, functionality, and visual harmony"
+      description: "We create personalized and inspiring interiors that reflect your style and meet your needs, focusing on comfort, functionality, and visual harmony"
     },
     {
       title: "Architecture Design",
       subpoints: ["New Builds: Designing residential and commercial structures.", "Renovations & Extensions", "Conceptual Architecture"],
-      description:"We offer comprehensive architectural services that combine aesthetic vision with structural integrity, ensuring each project aligns with your needs and environment."
+      description: "We offer comprehensive architectural services that combine aesthetic vision with structural integrity, ensuring each project aligns with your needs and environment."
     },
     {
       title: "Architecture",
       subpoints: ["Modern designs", "Residential", "Commercial"],
-      description:"We specialize in curating unforgettable events, from corporate gatherings to weddings, ensuring every detail is aligned with your vision and purpose."
+      description: "We specialize in curating unforgettable events, from corporate gatherings to weddings, ensuring every detail is aligned with your vision and purpose."
     },
     {
       title: "Event Design & Curation",
@@ -38,17 +38,17 @@ const Services = () => {
     {
       title: "Project Management & Consultation",
       subpoints: ["End-to-End Project Management", "Design Consultation", "Vendor & Contractor Coordination", "Budget & Timeline Management"],
-      description:"We provide end-to-end project management and expert consultation to ensure seamless execution, within budget and on time."
+      description: "We provide end-to-end project management and expert consultation to ensure seamless execution, within budget and on time."
     },
     {
       title: "Custom Design Solutions",
       subpoints: ["Bespoke Furniture Design", "Art & Decor Curation", "Lighting Design"],
-      description:"Every space is unique, and we offer tailored design solutions to meet your specific needs."
+      description: "Every space is unique, and we offer tailored design solutions to meet your specific needs."
     },
     {
       title: "Trading of Materials",
       subpoints: ["Building Materials", "Interior Furnishings", "Premium Materials"],
-      description:"We source and supply high-quality materials for your design and construction needs."
+      description: "We source and supply high-quality materials for your design and construction needs."
     }
 
   ];
@@ -80,10 +80,10 @@ const Services = () => {
               We Believe that Spaces should tell a Story - Your Story
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
-              <Link to='/'
+              <Link to='/about'
                 className=" relative share-tech bg-[#fff5e1] text-[#458661] border-solid border-2 border-[#458661] standard-btn hover:border-[#e2904c] hover:text-[#e2904c] py-3 px-11 pr-14 transition-all duration-300 mt-3 rounded-[2rem]" >
 
-                Blogs
+                About Us
 
                 <div className="absolute top-[44%] right-8 w-[0.5rem] h-[0.5rem] btn-circle rounded-[50%]"></div>
 
@@ -95,7 +95,7 @@ const Services = () => {
         {/* Bottom gradient */}
 
         <div
-          className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
+          className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl max-w-420:top-[calc(100%-30rem)]"
           aria-hidden="true"
         >
           <div

@@ -15,7 +15,7 @@ const Card = ({ title, subpoints, description }) => {
 
                     <div className="post-front flip-card-front">
                         <div className="share-tech">
-                            <h1 className="share-tech text-[#fff5e1] font-bold text-[2.3rem]" >{title}</h1>
+                            <h1 className="share-tech text-[#fff5e1] font-bold text-[2.3rem] max-w-420:text-[2rem]" >{title}</h1>
                         </div>
 
                         {subpoints && subpoints.length > 0 && (
