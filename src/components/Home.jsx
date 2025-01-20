@@ -26,32 +26,19 @@ const Home = () => {
 
     const finalPath = `M 10 100 Q 500 100 ${width} 100`;
 
-    useEffect(() => {
-        const svgContainer = svgContainerRef.current;
 
-        const handleMouseMove = (event) => {
-            var { clientX, clientY } = event;
-            clientX -= 200;
-            clientY -= 200;
-            path = `M 10 100 Q ${clientX} ${clientY} ${width} 100`;
+    const handleMouseMove = (event) => {
+        var { clientX, clientY } = event;
+        var x = clientX - 240;
+        var y = clientY - 240;
+        path = `M 10 100 Q ${x} ${y} ${width} 100`;
 
-            gsap.to(svgPathRef.current, {
-                attr: { d: path },
-                duration: 0.3,
-                ease: "power3.out",
-            });
-        };
-
-        if (svgContainer) {
-            svgContainer.addEventListener("mousemove", handleMouseMove);
-        }
-
-        return () => {
-            if (svgContainer) {
-                svgContainer.removeEventListener("mousemove", handleMouseMove);
-            }
-        };
-    }, []);
+        gsap.to(svgPathRef.current, {
+            attr: { d: path },
+            duration: 0.3,
+            ease: "power3.out",
+        });
+    };
     const handleMouseLeave = () => {
         gsap.to(svgPathRef.current, {
             attr: { d: finalPath },
@@ -183,43 +170,75 @@ const Home = () => {
 
 
 
-            <div id="string" ref={svgContainerRef} onMouseLeave={handleMouseLeave} className="relative">
+            <div id="string" ref={svgContainerRef} onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave} className="relative">
                 <svg viewBox={`0 0 ${window.innerWidth} 200`}
                     preserveAspectRatio="none" style={{ width: "100%", height: "100%" }}>
                     <path ref={svgPathRef} d={`M 10 100 Q 500 100 ${window.innerWidth} 100`} stroke="#458661" strokeWidth="2" fill="transparent" />
                 </svg>
             </div>
 
-            <section id="About Us" className="mt-24">
-
-                <h1 className="text-[#458661] text-center  font-medium text-[4rem] max-w-420:text-[3.2rem] max-w-420:mb-[2rem]">About Us</h1>
-                <div className="mega-grid-2-home justify-end flex-wrap-reverse">
 
 
-                    <div className="info-about-cont w-[30rem]  max-w-420:w-[90%] justify-around max-w-420:mr-[0rem] max-w-420:mb-[1.5rem]">
-                        <p className="share-tech text-home max-w-420:text-lg">
-                            An architect with a passion for interior design and event planning. I graduated from Bharati Vidyapeeth College of Architecture, Mumbai University, and bring creativity and precision to every project I work on.
+            <section id="About share-tech" className="AboutUs overflow-clip">
+            <p className="share-tech text-center text-6xl text-[#458661] max-w-420:text-5xl"><span>About Us</span>
+            </p>
+                <div className="mega-grid-2-home">
 
-                            <p className='share-tech text-home mr-5 mt-3 max-w-420:text-lg'> My design process starts by understanding the client’s vision and needs. Whether it's architecture, interior design, or event planning, I focus on blending functionality with aesthetic appeal to create spaces that reflect the client’s personality and style. I enjoy experimenting with materials, colors, and layouts to produce innovative, timeless designs.
+
+
+
+                    <div className="min-grid-2-home cl1_main-home">
+
+                        <div className="col2-home reveal-from-left">
+                            <div className="photo-cont max-w-420:mb-[1.5rem] relative z-0 overflow-visible cl2_main-home">
+                                <div className="abs absolute -top-[3rem] -right-[4rem] -z-10 leaf-animation">
+                                    <img className="w-[1rem]" src={leaf} alt="" />
+                                </div>
+                                <div className="abs absolute  -bottom-[3rem] -left-[4rem] -z-10 leaf-animation">
+                                    <img className="w-[1rem]" src={leaf} alt="" />
+                                </div>
+                                <div className="absolute"></div>
+                                <img src={profileImg} alt="" />
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div className="min-grid-2-home cl2_main-home">
+
+                        <div className="col2-info-home reveal share-tech">
+
+                            <p className="share-tech text-home max-w-420:text-lg">
+                                An architect with a passion for interior design and event planning. I graduated from Bharati Vidyapeeth College of Architecture, Mumbai University, and bring creativity and precision to every project I work on.
+
+                                <p className='share-tech text-home mr-5 mt-3 max-w-420:text-lg'> My design process starts by understanding the client’s vision and needs. Whether it's architecture, interior design, or event planning, I focus on blending functionality with aesthetic appeal to create spaces that reflect the client’s personality and style. I enjoy experimenting with materials, colors, and layouts to produce innovative, timeless designs.
+                                </p>
+                                <div className="mt-8 relative">
+
+                                    <Link to='/about'
+                                        className="standard-btn hover:border-[#e2904c] hover:text-[#e2904c] relative share-tech bg-[#fff5e1] text-[#458661] border-solid border-2 border-[#458661] py-3 px-11 pr-14 transition-all duration-300 mt-3 rounded-[2rem]" >
+
+                                        Explore
+
+                                        <div className="absolute top-[44%] right-8 w-[0.5rem] h-[0.5rem] btn-circle rounded-[50%]"></div>
+
+                                    </Link>
+
+
+                                </div>
                             </p>
-                        </p>
-                    </div>
-                    <div className="photo-cont max-w-420:mb-[1.5rem] relative z-0 overflow-visible">
-                        <div className="abs absolute -top-[3rem] -right-[4rem] -z-10">
-                            <img className="w-[1rem]" src={leaf} alt="" />
                         </div>
-                        <div className="abs absolute  -bottom-[3rem] -left-[4rem] -z-10">
-                            <img className="w-[1rem]" src={leaf} alt="" />
-                        </div>
-                        <div className="absolute"></div>
-                        <img src={profileImg} alt="" />
                     </div>
+
+
                 </div>
 
             </section>
 
 
-         
+
+
+
 
 
 

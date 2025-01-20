@@ -284,6 +284,8 @@ height: 4rem;
 
 
 
+
+
 .container-home{
   margin: 1% 10%;
   text-align: center;
@@ -306,7 +308,7 @@ color: #40A2D5;
   margin: 1% 5%;
   width: 90%;
   flex-wrap: wrap;
-  overflow: visible;
+  overflow: hidden;
   min-height: 100vh;
 }
 .min-grid-2-home{
@@ -401,6 +403,34 @@ hr{
   background-color: #458661;
   margin: 1% 0;
 }
+.AboutUs .mega-grid-2-home{
+ 
+  height: fit-content;
+  min-height: auto;
+  overflow: visible;
+}
+/* Leaf Animation */
+/* Leaf Animation */
+.leaf-animation {
+  animation: sway 3s ease-in-out infinite;
+}
+
+@keyframes sway {
+  0%, 100% {
+    transform: rotate(0deg) translate(0, 0);
+  }
+  25% {
+    transform: rotate(2deg) translate(2px, -2px);
+  }
+  50% {
+    transform: rotate(-2deg) translate(-2px, 2px);
+  }
+  75% {
+    transform: rotate(1deg) translate(1px, -1px);
+  }
+}
+
+
 
 
 @media(max-width:820px){
@@ -428,6 +458,9 @@ hr{
   }
   .col2-info-home{
     height: fit-content;
+    margin: unset;
+    width: unset;
+    margin-top: 1.7rem ;
   }
   .info-image{
     width: 4rem;
